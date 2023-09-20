@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Tektur&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Tektur', cursive;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 7px 20px;
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+    padding: 0px 12px;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    color: rgb(192, 189, 205);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    padding: 12px;
+}
+
+main {
+    min-height: 90vh;
+}
+
+.logo img {
+    width: 15px;
+    filter: invert(1);
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.container {
+    /* background-color: azure; */
+    max-width: 80vw;
+    margin: auto;
+    padding: 10px;
+}.container h1{
+    margin-bottom: 3px;
+}
+input[type = 'text']{
+    min-width: 20vw;
+    padding: 3px 12px;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+/* .container h1{
+     padding: 10px 0; 
+} */
+.btn{
+    background-color: black;
+    color: white;
+    padding: 9px 12px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    cursor: pointer;
+}
+#resultCont div::first-letter{
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width:600px) {
+    body {
+        background-color: lightblue;
+    }
+
+    .container {
+        font-size: 12px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .logo {
+        padding: 6px 0;
+        font-size: 20px;
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+    }
+
+    .logo img {
+        width: 15px;
+        filter: invert(1);
+    }
+
+    .logo span {
+        font-size: 20px;
+    }
+}
